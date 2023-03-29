@@ -1,4 +1,4 @@
-from inky import InkyWHAT
+from inky.auto import auto
 from PIL import Image, ImageFont, ImageDraw, ImageOps
 from font_source_serif_pro import SourceSerifProSemibold
 from font_source_sans_pro import SourceSansProSemibold
@@ -31,7 +31,7 @@ summary_gap_between_artist_and_album = 20
 summary_fontsize_for_album = 27
 
 # Set up the correct display and scaling factors
-inky_display = InkyWHAT("black")
+inky_display = auto(ask_user=True, verbose=True)
 inky_display.set_border(inky_display.BLACK)
 x = 0
 y = 0
